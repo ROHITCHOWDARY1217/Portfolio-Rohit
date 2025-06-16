@@ -1,0 +1,8 @@
+.app-container{
+  background: linear-gradient(to bottom, #e0e7ff, #faf0f8, #ffe4e6 )!important;
+  min-height:100vh;
+  height:100%;
+  padding: 20px;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}   

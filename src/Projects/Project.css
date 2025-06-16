@@ -1,0 +1,58 @@
+.project-item{
+    border-radius: 15px;
+  border: 1px solid #ccc;
+  color: #333;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px ;
+  margin-bottom: auto;
+  padding: 2rem;
+ background-color: rgba(255, 255, 255, 0.8);
+}
+.projects h1{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.project-item {
+  width: 1000px;
+  height: 50px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 16px;
+  overflow: hidden;
+  transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-item:hover {
+  height: 200px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transform: scale(1.02);
+}
+
+.view-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    background-color: #8ed8ea; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+.view-btn:hover{
+  background-color: #f94f0c;
+  transform: scale(1.2);
+}
+.projects{
+  padding-top: 3  0px; 
+    margin-top: -60px;
+}
