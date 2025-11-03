@@ -174,9 +174,28 @@
   position: relative;
   text-align: center;
 }
+@keyframes cardTilt {
+  0% {
+    transform: scale(1) rotateY(0deg) rotateX(0deg);
+  }
+  100% {
+    transform: scale(1.15) rotateY(5deg) rotateX(-5deg);
+  }
+}
+
+@keyframes cardGlow {
+  0%, 100% {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+  50% {
+    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.25);
+  }
+}
+
 .img-1:hover{
   height: 150px;
-  transform: scale(1.1);
+  transform: scale(1.12) rotateZ(3deg);
+  animation: cardGlow 0.6s ease-in-out;
 }
 
 .front-end{
