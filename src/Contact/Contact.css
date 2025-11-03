@@ -98,7 +98,67 @@
   color: rgb(145, 7, 157);       
   margin: -1px;           
 }
-.para:hover {                     
-  color: #f94f0c;  
-  transform: scale(1.45);      
+.para:hover {
+  color: #f94f0c;
+  transform: scale(1.45);
+}
+
+@media (max-width: 600px) {
+  .contact-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-sub-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .linkdin,
+  .insta,
+  .twitter,
+  .mail {
+    height: 40px;
+    width: 40px;
+  }
+
+  .linkdin:hover,
+  .insta:hover,
+  .twitter:hover,
+  .mail:hover {
+    transform: scale(1.2);
+  }
+
+  .location {
+    margin: 20px auto;
+  }
+
+  .location img {
+    height: 25px;
+    width: 25px;
+  }
+
+  .para {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .contact-container h1 {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .contact-sub-container {
+    gap: 30px;
+  }
+
+  .linkdin,
+  .insta,
+  .twitter,
+  .mail {
+    height: 45px;
+    width: 45px;
+  }
 }

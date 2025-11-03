@@ -4,5 +4,17 @@
   height:100%;
   padding: 20px;
   scroll-behavior: smooth;
-  overflow: hidden;
-}   
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .app-container {
+    padding: 15px;
+  }
+}

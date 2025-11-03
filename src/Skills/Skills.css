@@ -195,3 +195,72 @@
 .skills-container{
   margin-bottom: 60px;
 }
+
+@media (max-width: 600px) {
+  .skills-header {
+    margin-top: 50px;
+  }
+
+  .frontend-button,
+  .programming-button,
+  .other-button {
+    margin: 20px 10px;
+    padding: 1rem;
+  }
+
+  .frontEnd-details,
+  .programming-details,
+  .other-details {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .img-1 {
+    width: 70px;
+    height: 70px;
+    padding: 8px;
+  }
+
+  .img-1:hover {
+    height: 100px;
+  }
+
+  .front,
+  .back,
+  .other {
+    height: 60px;
+    width: 60px;
+  }
+
+  .img-1 p {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .frontend-button,
+  .programming-button,
+  .other-button {
+    margin: 40px 20px;
+  }
+
+  .frontEnd-details,
+  .programming-details,
+  .other-details {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .img-1 {
+    width: 85px;
+    height: 85px;
+  }
+
+  .front,
+  .back,
+  .other {
+    height: 80px;
+    width: 80px;
+  }
+}
