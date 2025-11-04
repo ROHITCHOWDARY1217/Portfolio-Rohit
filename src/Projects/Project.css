@@ -1,36 +1,42 @@
 .project-item{
     border-radius: 15px;
-  border: 1px solid #ccc;
-  color: #333;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  max-width: 64rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px ;
-  margin-bottom: auto;
-  padding: 2rem;
- background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    max-width: 64rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
 }
+
 .projects h1{
     font-family:'Courier New', Courier, monospace;
 }
 
 .project-item {
-  width: 1000px;
-  height: 50px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 16px;
-  overflow: hidden;
-  cursor: pointer;
-  position: relative;
+    width: 1000px;
+    height: 50px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.project-item h2 {
+    margin: 0;
+    flex: 1;
 }
 
 .view-btn{
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
     background-color: #8ed8ea;
     border: none;
     color: white;
@@ -39,86 +45,117 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
+    white-space: nowrap;
+    align-self: center;
+}
+
+.project-description {
+    display: none;
 }
 
 .projects{
-  padding-top: 30px;
+    padding-top: 30px;
     margin-top: -60px;
 }
 
 @media (min-width: 901px) {
-  .project-item {
-    transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
-  }
+    .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
+    }
 
-  .project-item:hover {
-    height: 200px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transform: scale(1.02);
-  }
+    .project-item:hover {
+        height: 200px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        transform: scale(1.02);
+    }
 
-  .view-btn {
-    transition: transform 0.4s ease;
-  }
+    .project-item:hover .project-description {
+        display: block;
+    }
 
-  .view-btn:hover {
-    background-color: #f94f0c;
-    transform: scale(1.2);
-  }
+    .project-item:hover .view-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        align-self: auto;
+    }
+
+    .view-btn {
+        transition: transform 0.4s ease;
+    }
+
+    .view-btn:hover {
+        background-color: #f94f0c;
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 900px) {
-  .projects h1 {
-    font-size: 1.5rem;
-    padding: 0 10px;
-  }
+    .projects h1 {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
 
-  .projects p {
-    padding: 0 10px;
-    font-size: 14px;
-  }
+    .projects p {
+        padding: 0 10px;
+        font-size: 14px;
+    }
 
-  .project-item {
-    width: 90%;
-    margin: 30px auto;
-    padding: 12px;
-    transition: height 0.4s ease;
-  }
+    .project-item {
+        width: 90%;
+        margin: 30px auto;
+        padding: 12px;
+        flex-direction: row;
+        align-items: center;
+        height: auto;
+        transition: height 0.4s ease;
+    }
 
-  .project-item.expanded {
-    height: 250px;
-  }
+    .project-item h2 {
+        font-size: 16px;
+        margin: 0;
+    }
 
-  .project-item h2 {
-    font-size: 16px;
-  }
+    .project-item.expanded {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
 
-  .project-description {
-    font-size: 12px;
-  }
+    .project-item.expanded .project-description {
+        display: block;
+        font-size: 12px;
+        margin: 10px 0;
+        width: 100%;
+    }
 
-  .view-btn {
-    padding: 8px 15px;
-    font-size: 14px;
-  }
+    .project-item.expanded .view-btn {
+        align-self: flex-start;
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .project-item:not(.expanded) .view-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .project-item {
-    width: 85%;
-    margin: 40px auto;
-  }
+    .project-item {
+        width: 85%;
+        margin: 40px auto;
+    }
 
-  .project-item.expanded {
-    height: 220px;
-  }
+    .project-item h2 {
+        font-size: 18px;
+    }
 
-  .project-item h2 {
-    font-size: 18px;
-  }
-
-  .view-btn {
-    padding: 9px 18px;
-    font-size: 15px;
-  }
+    .view-btn {
+        padding: 9px 18px;
+        font-size: 15px;
+    }
 }

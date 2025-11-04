@@ -47,6 +47,8 @@
 .profile-text h2{
     font-size: 120px;
     margin:-10px;
+    word-spacing: 9999px;
+    white-space: normal;
 }
 
 .profile-text h3{
@@ -118,7 +120,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .profile {
         flex-direction: column;
         margin-top: 50px;
@@ -143,6 +145,7 @@
     .profile-text h2 {
         font-size: 50px;
         margin: 0;
+        word-spacing: 9999px;
     }
 
     .profile-text h3 {
@@ -192,6 +195,7 @@
 
     .profile-text h2 {
         font-size: 80px;
+        word-spacing: 9999px;
     }
 
     .profile-text h3 {
