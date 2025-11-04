@@ -1,266 +1,252 @@
 .front{
     height:100px;
     width: 100px;
+}
 
-}   
 .frontend-button{
-  border-radius: 0.5rem;
-  border: 1px solid #e0e0e0;
-  color: #374151;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  font-family: 'Your-Brand-Font';
-  margin: 63px;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    color: #374151;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-family: 'Your-Brand-Font';
+    margin: 63px;
+}
 
-  
-}
-.frontend-button:hover{
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
 .frontEnd-details{
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
+
 .skills-buttons{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 20px;
-    
-  
 }
+
 .programming-details{
-   display: flex;
+    display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    
 }
+
 .back{
     height:100px;
     width: 100px;
 }
-/* .skills-header{
-    background-color: gold;
-    height:80px;
-    width:140px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 30px 0px;
-    align-content: center;
-   
-} */
-
-/* .skills-header {
-  background: linear-gradient(to right, #8b5cf6, #ec4899);
-  color: white;
-  padding: 0.75rem;
-  border-radius: 9px;
-  font-weight: 500;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  margin:20px 0px;
-} */
 
 .skills-header {
- font-size: 1rem;
-  font-weight: 700;
-  margin-top: 100px;
-  font-family:'Courier New', Courier, monospace;
- 
-
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 100px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .other-button{
-   border-radius: 0.5rem;
-  border: 1px solid #e0e0e0;
-  color: #374151;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  font-family: 'Your-Brand-Font'; 
-  margin: 63px;
- 
-}
-.other-button:hover{
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-.other-details{
-     display: flex;
-    gap: 10px;
-     justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    color: #374151;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-family: 'Your-Brand-Font';
+    margin: 63px;
 }
+
+.other-details{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
 .other{
-     height:100px;
+    height:100px;
     width: 100px;
 }
-    
-
-
 
 .programming-button {
-  border-radius: 0.5rem;
-  border: 1px solid #e0e0e0;
-  color: #374151;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  padding: 1.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 100%;
-  font-family: 'Your-Brand-Font'; 
-  margin: 63px;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    color: #374151;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    cursor: pointer;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    font-family: 'Your-Brand-Font';
+    margin: 63px;
 }
-
-.programming-button:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
 
 .skill-card{
-  border-radius: 15px;
-  border: 1px solid #800080;
-  color: #333;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  max-width: 64rem;
-  position: absolute;
-  bottom: 16%;
-  left: 20%;
-  right: 20%;
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.23);
-  padding: 2rem;
- background-color: #ededf6;
-  font-family: Georgia, Times, serif;
+    border-radius: 15px;
+    border: 1px solid #800080;
+    color: #333;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    max-width: 64rem;
+    position: absolute;
+    bottom: 16%;
+    left: 20%;
+    right: 20%;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.23);
+    padding: 2rem;
+    background-color: #ededf6;
+    font-family: Georgia, Times, serif;
 }
+
 .img-1{
-  width: 100px;
-  height: 100px;
-  border-radius: 12px;
-  padding: 16px;
-  overflow: hidden;
-  transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
-  cursor: pointer;
-  position: relative;
-  text-align: center;
-}
-.img-1:hover{
-  height: 150px;
-  transform: scale(1.1);
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    padding: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
 }
 
 .front-end{
-  display: flex;
-  
+    display: flex;
+}
 
-}
 .programming{
-  display: flex;
-  
+    display: flex;
 }
+
 .Others{
-  display: flex;
-  
+    display: flex;
 }
+
 .skills-container{
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+@media (min-width: 901px) {
+    .frontend-button {
+        transition: all 0.3s ease;
+    }
+
+    .frontend-button:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .programming-button {
+        transition: all 0.3s ease;
+    }
+
+    .programming-button:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .other-button {
+        transition: all 0.3s ease;
+    }
+
+    .other-button:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .img-1 {
+        transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
+    }
+
+    .img-1:hover {
+        height: 150px;
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 600px) {
-  .skills-header {
-    margin-top: 50px;
-  }
+    .skills-header {
+        margin-top: 50px;
+    }
 
-  .frontend-button,
-  .programming-button,
-  .other-button {
-    margin: 20px 10px;
-    padding: 1rem;
-  }
+    .frontend-button,
+    .programming-button,
+    .other-button {
+        margin: 20px 10px;
+        padding: 1rem;
+    }
 
-  .frontEnd-details,
-  .programming-details,
-  .other-details {
-    flex-wrap: wrap;
-    gap: 15px;
-    padding: 10px;
-  }
+    .frontEnd-details,
+    .programming-details,
+    .other-details {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px;
+    }
 
-  .img-1 {
-    width: 70px;
-    height: 70px;
-    padding: 8px;
-  }
+    .img-1 {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
+    }
 
-  .img-1:hover {
-    height: 100px;
-  }
+    .front,
+    .back,
+    .other {
+        height: 60px;
+        width: 60px;
+    }
 
-  .front,
-  .back,
-  .other {
-    height: 60px;
-    width: 60px;
-  }
-
-  .img-1 p {
-    font-size: 11px;
-  }
+    .img-1 p {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .frontend-button,
-  .programming-button,
-  .other-button {
-    margin: 40px 20px;
-  }
+    .frontend-button,
+    .programming-button,
+    .other-button {
+        margin: 40px 20px;
+    }
 
-  .frontEnd-details,
-  .programming-details,
-  .other-details {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+    .frontEnd-details,
+    .programming-details,
+    .other-details {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-  .img-1 {
-    width: 85px;
-    height: 85px;
-  }
+    .img-1 {
+        width: 85px;
+        height: 85px;
+    }
 
-  .front,
-  .back,
-  .other {
-    height: 80px;
-    width: 80px;
-  }
+    .front,
+    .back,
+    .other {
+        height: 80px;
+        width: 80px;
+    }
 }

@@ -1,16 +1,30 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import './Nav.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="nav">
-            <div className='nav-list'>
-                <div><a href="#Home" className="nav-link">Home</a></div>
-                <div><a href="#About" className="nav-link">About</a> </div>  
-                <div><a href="#Skills" className="nav-link">Skills</a> </div>
-                <div><a href="#Projects" className="nav-link">Projects</a></div>
-                <div><a href="#Contact" className="nav-link">Contact</a></div>
+            <button className="hamburger" onClick={toggleMenu}>
+                {isOpen ? <FaTimes /> : <FaBars />}
+            </button>
+            <div className={`nav-list ${isOpen ? 'active' : ''}`}>
+                <div><a href="#Home" className="nav-link" onClick={closeMenu}>Home</a></div>
+                <div><a href="#About" className="nav-link" onClick={closeMenu}>About</a> </div>
+                <div><a href="#Skills" className="nav-link" onClick={closeMenu}>Skills</a> </div>
+                <div><a href="#Projects" className="nav-link" onClick={closeMenu}>Projects</a></div>
+                <div><a href="#Contact" className="nav-link" onClick={closeMenu}>Contact</a></div>
             </div>
         </nav>
     );

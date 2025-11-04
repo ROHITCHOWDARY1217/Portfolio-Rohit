@@ -23,22 +23,15 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 16px;
   overflow: hidden;
-  transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
   cursor: pointer;
   position: relative;
-}
-
-.project-item:hover {
-  height: 200px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  transform: scale(1.02);
 }
 
 .view-btn{
     position: absolute;
     bottom: 10px;
     right: 20px;
-    background-color: #8ed8ea; /* Green */
+    background-color: #8ed8ea;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -46,18 +39,35 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.4s ease;
 }
-.view-btn:hover{
-  background-color: #f94f0c;
-  transform: scale(1.2);
-}
+
 .projects{
   padding-top: 30px;
     margin-top: -60px;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 901px) {
+  .project-item {
+    transition: height 0.6s ease, box-shadow 0.3s ease, transform 0.4s ease;
+  }
+
+  .project-item:hover {
+    height: 200px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+  }
+
+  .view-btn {
+    transition: transform 0.4s ease;
+  }
+
+  .view-btn:hover {
+    background-color: #f94f0c;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 900px) {
   .projects h1 {
     font-size: 1.5rem;
     padding: 0 10px;
@@ -72,6 +82,11 @@
     width: 90%;
     margin: 30px auto;
     padding: 12px;
+    transition: height 0.4s ease;
+  }
+
+  .project-item.expanded {
+    height: 250px;
   }
 
   .project-item h2 {
@@ -80,10 +95,6 @@
 
   .project-description {
     font-size: 12px;
-  }
-
-  .project-item:hover {
-    height: 250px;
   }
 
   .view-btn {
@@ -98,7 +109,7 @@
     margin: 40px auto;
   }
 
-  .project-item:hover {
+  .project-item.expanded {
     height: 220px;
   }
 
